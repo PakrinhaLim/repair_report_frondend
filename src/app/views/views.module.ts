@@ -16,7 +16,7 @@ import { Map1Component } from './maps/map1/map1.component';
 import { StatsCardComponent } from './dashboards/common/stats-card/stats-card.component';
 import { StatsCard2Component } from './dashboards/common/stats-card2/stats-card2.component';
 import { Dashboard1Component } from './dashboards/dashboard1/dashboard1.component';
-import { Profile1Component } from './profile/profile1/profile1.component';
+import { UserReportComponent } from './report-page/user/user-report.component';
 import { HelpComponent } from './help/help.component';
 
 
@@ -42,7 +42,7 @@ import { HelpComponent } from './help/help.component';
     StatsCardComponent,
     StatsCard2Component,
     Dashboard1Component,
-    Profile1Component,
+    UserReportComponent,
     HelpComponent,
 
   ],

@@ -2,7 +2,7 @@
 import { Map1Component } from './views/maps/map1/map1.component';
 import { ModalsComponent } from './views/modals/modals.component';
 import { BasicTableComponent } from './views/tables/basic-table/basic-table.component';
-import { Profile1Component } from './views/profile/profile1/profile1.component';
+import { UserReportComponent } from './views/report-page/user/user-report.component';
 import { RouterModule, Route } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { NotFoundComponent } from './views/errors/not-found/not-found.component';
@@ -16,9 +16,9 @@ const routes: Route[] = [
       { path: 'v1', component: Dashboard1Component },
     ]
   },
-  { path: 'profiles', children:
+  { path: 'report', children:
     [
-      { path: 'profile1', component: Profile1Component },
+      { path: 'user-report', component: UserReportComponent },
     ]
   },
   { path: 'tables', children:

@@ -10,7 +10,7 @@ import { AppRoutes } from './app.routes.service';
 import { ViewsModule } from './views/views.module';
 import { SharedModule } from './shared/shared.module';
 import { ErrorModule } from './views/errors/error.module';
-
+// import {DatepickerModule} from 'ngx-date-picker';
 // main layout
 import { NavigationModule } from './main-layout/navigation/navigation.module';
 
@@ -32,9 +32,13 @@ import { NavigationModule } from './main-layout/navigation/navigation.module';
     ViewsModule,
     ErrorModule,
     FormsModule, 
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    // DatepickerModule
+    // MDBBootstrapModulesPro.forRoot()
   ],
-  providers: [],
+  providers: [
+    // { provide: MDB_DATE_OPTIONS, useValue: { showTodayBtn: false } }
+  ],
   bootstrap: [AppComponent],
   schemas: [ NO_ERRORS_SCHEMA, CUSTOM_ELEMENTS_SCHEMA ]
 })
