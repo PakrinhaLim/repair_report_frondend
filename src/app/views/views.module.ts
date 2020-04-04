@@ -16,7 +16,9 @@ import { Map1Component } from './maps/map1/map1.component';
 import { StatsCardComponent } from './dashboards/common/stats-card/stats-card.component';
 import { StatsCard2Component } from './dashboards/common/stats-card2/stats-card2.component';
 import { Dashboard1Component } from './dashboards/dashboard1/dashboard1.component';
+import { MaterialComponent } from './material/material.component';
 import { UserReportComponent } from './report-page/user/user-report.component';
+import { AdminReportComponent } from './report-page/admin/admin-report.component';
 import { HelpComponent } from './help/help.component';
 
 
@@ -43,6 +45,8 @@ import { HelpComponent } from './help/help.component';
     StatsCard2Component,
     Dashboard1Component,
     UserReportComponent,
+    AdminReportComponent,
+    MaterialComponent,
     HelpComponent,
 
   ],

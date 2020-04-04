@@ -2,7 +2,9 @@
 import { Map1Component } from './views/maps/map1/map1.component';
 import { ModalsComponent } from './views/modals/modals.component';
 import { BasicTableComponent } from './views/tables/basic-table/basic-table.component';
+import { MaterialComponent } from './views/material/material.component';
 import { UserReportComponent } from './views/report-page/user/user-report.component';
+import { AdminReportComponent } from './views/report-page/admin/admin-report.component';
 import { RouterModule, Route } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 import { NotFoundComponent } from './views/errors/not-found/not-found.component';
@@ -20,6 +22,13 @@ const routes: Route[] = [
     [
       { path: 'user-report', component: UserReportComponent },
     ]
+  },
+  { path: 'report', children:
+    [
+      { path: 'admin-report', component: AdminReportComponent },
+    ]
+  },
+  { path: 'materials' , component: MaterialComponent 
   },
   { path: 'tables', children:
     [
